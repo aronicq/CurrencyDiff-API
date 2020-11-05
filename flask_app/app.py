@@ -25,7 +25,8 @@ def get_difference():
     # start_date = "01-10-2020"
     # end_date = "01-11-2020"
     # currency = "EUR"
-    start_date = request.args.get("start_date")
+
+    start_date = convert_date(request.args.get("start_date"))
     end_date = request.args.get("end_date")
     currency = request.args.get("currency")
 
