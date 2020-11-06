@@ -22,10 +22,6 @@ def convert_date(date):
 
 @app.route('/difference')
 def get_difference():
-    # start_date = "01-10-2020"
-    # end_date = "01-11-2020"
-    # currency = "EUR"
-
     start_date = convert_date(request.args.get("start_date"))
     end_date = request.args.get("end_date")
     currency = request.args.get("currency")
@@ -41,9 +37,3 @@ def get_difference():
     return {"start_rate": start_rate,
             "end_rate": end_rate,
             "rate_difference": start_rate - end_rate}
-#
-#
-# if __name__ == '__main__':
-#     app.run(host="0.0.0.0")
-# # print(get_difference("01-10-2000", "01-11-2020", "EUR"))
-# # print(convert_date("2000-10-02"))
