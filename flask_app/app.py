@@ -60,7 +60,3 @@ def get_difference():
             "end_rate": end_rate,
             "rate_difference": '{:.1f}'.format(start_rate - end_rate)}
 
-# if __name__ == '__main__':
-#     app.run(host="0.0.0.0")
-# # print(get_difference("01-10-2000", "01-11-2020", "EUR"))
-# # print(convert_date("2000-10-02"))
