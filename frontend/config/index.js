@@ -48,7 +48,7 @@ module.exports = {
     index: path.resolve(__dirname, '../../flask_app/templates/index.html'),
 
     // Paths
-    assetsRoot: path.resolve(__dirname, '../../flask_app/templates/'),
+    assetsRoot: path.resolve(__dirname, '../../flask_app/'),
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
 
